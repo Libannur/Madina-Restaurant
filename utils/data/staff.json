@@ -1,0 +1,37 @@
+{
+  "-O-8jB0ObQcgYP0RQtrp": {
+    "firebaseKey" : "-O-8jB0ObQcgYP0RQtrp",
+    "first_name" : "Maryan",
+    "last_name" : "Sahal",
+    "position_id" : "Manager",
+    "uid" : ""
+  },
+  "-O-8kRdzs1NnmjCX53UZ": {
+    "firebaseKey" : "-O-8kRdzs1NnmjCX53UZ",
+    "first_name" : "Kiin",
+    "last_name" : "Sahal",
+    "position_id" : "Chef",
+    "uid" : ""
+  },
+  "-O-8ote6g7JQJ1s_F8wL": {
+    "firebaseKey" : "-O-8ote6g7JQJ1s_F8wL",
+    "first_name" : "Mahad",
+    "last_name" : "Yusuf",
+    "position_id" : "Cashier",
+    "uid" : ""
+  },
+  "-O-8pXuaZ37Z3FQRSeH": {
+    "firebaseKey" : "-O-8pXuaZ37Z3FQRSeH",
+    "first_name" : "Asad",
+    "last_name" : "Ali",
+    "position_id" : "Waiter",
+    "uid" : ""
+  },
+  "-O-8qGFvLG-Bw1ewReMD": {
+    "firebaseKey" : "-O-8qGFvLG-Bw1ewReMD",
+    "first_name" : "Jama",
+    "last_name" : "Ahmed",
+    "position_id" : "Cleaner",
+    "uid" : ""
+  }
+}
