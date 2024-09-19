@@ -1,27 +1,27 @@
 {
     "-MiBsfuTafbEQ7eAULxV" : {
       "firebaseKey" : "-MiBsfuTafbEQ7eAULxV",
-      "position_id" : "Manager",
+      "position_name" : "Manager",
       "uid": ""
     },
     "-MiBt86VzkC-EGmJnxjm" : {
       "firebaseKey" : "-MiBt86VzkC-EGmJnxjm",
-      "position_id" : "Chef",
+      "position_name" : "Chef",
       "uid": ""
     },
     "-MiBtwf1BwN9pGavQeR3" : {
       "firebaseKey" : "-MiBtwf1BwN9pGavQeR3",
-      "position_id": "Cashier",
+      "position_name": "Cashier",
       "uid": ""
     },
     "-MiBuOfHv9NCKB_cneij" : {
       "firebaseKey" : "-MiBuOfHv9NCKB_cneij",
-      "position_id" : "Waiter",
+      "position_name" : "Waiter",
       "uid": ""
     },
     "-MiBulenBnY8by9Xn7q1" : {
       "firebaseKey" : "-MiBulenBnY8by9Xn7q1",
-      "position_id" : "Cleaner",
+      "position_name" : "Cleaner",
       "uid": ""
     }
   }

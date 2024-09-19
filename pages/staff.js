@@ -35,7 +35,7 @@ function Staff() {
       <div className="d-flex flex-wrap">
         {/* DONE: map over staff here using AuthorCard component */}
         {staffs.map((staff) => (
-          <StaffCard key={staff.firebaseKey} staffObj={staff} onUpdate={getAllStaff} />
+          <StaffCard key={staff.position_id} staffObj={staff} onUpdate={getAllStaff} />
         ))}
       </div>
 
