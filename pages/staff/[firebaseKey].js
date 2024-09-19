@@ -24,7 +24,7 @@ function veiwStaff() {
         <h5>
           {staffDetails.first_name} {staffDetails.last_name}
         </h5>
-        <p>{staffDetails.position_id || ''}</p>
+        <p>{staffDetails.position_name || ''}</p>
         <hr />
       </div>
     </div>
