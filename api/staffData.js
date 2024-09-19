@@ -58,8 +58,8 @@ const createStaff = (payload) => new Promise((resolve, reject) => {
 
 const viewStaffDetails = (staffFirebaseKey) => new Promise((resolve, reject) => {
   Promise.all([getSingleStaff(staffFirebaseKey), getStaff(staffFirebaseKey)])
-    .then(([authorObject, authorBooksArray]) => {
-      resolve({ ...authorObject, books: authorBooksArray });
+    .then(([positionObject, positionStaffsArray]) => {
+      resolve({ ...positionObject, staffs: positionStaffsArray });
     }).catch((error) => reject(error));
 });
 
