@@ -18,7 +18,7 @@ function StaffCard({ staffObj, onUpdate }) {
     <Card style={{ width: '24rem', margin: '10px' }}>
       <Card.Body>
         <Card.Title>{staffObj.first_name} {staffObj.last_name}</Card.Title>
-        <Card.Title>{staffObj.position_id}</Card.Title>
+        <Card.Title>{staffObj.position_name}</Card.Title>
         {/* DYNAMIC LINK TO VIEW THE Staff DETAILS  */}
         <Link href={`/staff/${staffObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">VIEW</Button>
@@ -39,7 +39,7 @@ StaffCard.propTypes = {
   staffObj: PropTypes.shape({
     first_name: PropTypes.string,
     last_name: PropTypes.string,
-    position_id: PropTypes.string,
+    position_name: PropTypes.string,
     firebaseKey: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,

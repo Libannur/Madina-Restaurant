@@ -13,17 +13,17 @@ import getPosition from '../../api/positionData';
 const initialState = {
   first_name: '',
   last_name: '',
-  position_id: '',
+  position_name: '',
 };
 
-// Form component that takes an (obj) prop
+// Form component that takes an (obj) prop which is used
 function StaffForm({ obj }) {
   const [formInput, setFormInput] = useState(initialState);
   const [positions, setPosition] = useState([]);
   const router = useRouter();
   const { user } = useAuth();
 
-  // Fetches staff data and set form input if editing
+  // This useEffect hook runs when the component mounts or when obj or user changes. It fetches positions and sets the form input if editing an existing staff member.
   useEffect(() => {
     getPosition().then(setPosition);
 
@@ -39,7 +39,7 @@ function StaffForm({ obj }) {
     }));
   };
 
-  // Hnadles form submission, either updating or creating a staff member
+  // This function handles form submission, either updating an existing staff member or creating a new one.
   const handleSubmit = (e) => {
     e.preventDefault();
     if (obj.firebaseKey) {
@@ -86,20 +86,20 @@ function StaffForm({ obj }) {
       <FloatingLabel controlId="floatingSelect" label="Position">
         <Form.Select
           aria-label="Position"
-          name="position_id"
+          name="position_name"
           onChange={handleChange}
           className="mb-3"
-          value={formInput.position_id}
+          value={formInput.position_name}
           required
         >
           <option value="">Select Position</option>
           {
-            positions.map((staff) => (
+            positions.map((position) => (
               <option
-                key={staff.position_id}
-                value={staff.position_id}
+                key={position.position_id}
+                value={position.position_id}
               >
-                {staff.position_id}
+                {position.position_name}
               </option>
             ))
           }
@@ -117,7 +117,7 @@ StaffForm.propTypes = {
   obj: PropTypes.shape({
     first_name: PropTypes.string,
     last_name: PropTypes.string,
-    position_id: PropTypes.string,
+    position_name: PropTypes.string,
     firebaseKey: PropTypes.string,
   }),
 };
