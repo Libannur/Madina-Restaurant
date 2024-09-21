@@ -19,12 +19,12 @@ function veiwStaff() {
   }, [firebaseKey]);
 
   return (
-    <div className="mt-5 d-flex flex-wrap text-center">
-      <div className="text-white ms-5 details">
-        <h5>
+    <div className="mt-5 d-flex flex-wrap text-center view-staff">
+      <div className="text-white ms-5 details" style={{ textAlign: 'match-parent' }}>
+        <h2>
           {staffDetails.first_name} {staffDetails.last_name}
-        </h5>
-        <p>{staffDetails.position_name || ''}</p>
+        </h2>
+        <h4>{staffDetails.position_name || ''}</h4>
         <hr />
       </div>
     </div>

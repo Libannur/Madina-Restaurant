@@ -82,3 +82,8 @@ a {
   border: none;
   margin-left: 15px;
 }
+.veiw-staff {
+  background-color: burlywood;
+  font-size: larger;
+  color: black;
+}

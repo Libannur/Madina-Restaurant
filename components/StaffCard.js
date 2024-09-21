@@ -16,7 +16,7 @@ function StaffCard({ staffObj, onUpdate }) {
 
   return (
     <Card style={{ width: '24rem', margin: '10px' }}>
-      <Card.Body>
+      <Card.Body style={{ backgroundColor: 'cadetblue' }}>
         <Card.Title>{staffObj.first_name} {staffObj.last_name}</Card.Title>
         <Card.Title>{staffObj.position_name}</Card.Title>
         {/* DYNAMIC LINK TO VIEW THE Staff DETAILS  */}
