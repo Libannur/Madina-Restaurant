@@ -1,7 +1,7 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
 body {
-    background-image: url('https://ethnomed.org/wp-content/uploads/2020/01/somali-food-edsel-little.jpg');
+    background-image: url('../public/madina-logo.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
